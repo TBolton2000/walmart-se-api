@@ -91,7 +91,8 @@ def make_query(query):
 
     return json.dumps(products, ensure_ascii=False)
 
-app.run()
+if __name__ == '__main__':
+    app.run()
 
 # text_list = df.description.str.lower().values
 # tok_text=[] # for our tokenised corpus
